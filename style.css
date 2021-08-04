@@ -10,16 +10,30 @@ html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: rgba(0,0,0,0.87);
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,0.87);
     line-height: 1.6;
+}
+
+.sf{
+    font-size: 1.3rem;
+}
+
+.lf{
+    font-size: 1.4rem;
 }
 
 a{
     text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*#endregion*/
@@ -35,18 +49,15 @@ nav{
 
 .nav-link{
     margin: 10px;
-    color: rgba(0,0,0,0.87);
-    font-size: 1.3rem;
 }
 
-.nav-link:hover{
+.nav-link:hover,
+.lang-link:hover,
+.footer-link:hover{
     text-decoration: underline;
 }
 
 .nav-link-round{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40px;
     height: 40px;
     margin: 10px 5px;
@@ -73,7 +84,6 @@ nav{
     color: #fff;
     padding:10px 27px;
     border-radius: 4px;
-    font-size: 1.4rem;
 }
 
 .signin-btn:hover{
@@ -87,34 +97,32 @@ nav{
 /* Main*/
 /*#region*/
 main{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 65vh;
     min-height: 300px;
+
+    /* background-color: wheat; */
 }
 
 .logo {
     width: 272px;
     height: 92px;
-    margin-bottom: 26px;
+    margin-top: 96px;
 }
 
 .search-container{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid rgb(219, 219, 219);
     width: 58.4rem;
     height: 45px;
     border-radius: 30px;
+    margin-top: 26px;
 }
 
 .search-icon {
     width: 20px;
     height: 20px;
-    margin: 0 5px 0 15px;
+    margin: 0 5px 0 14px;
     opacity: 0.4;
 }
 
@@ -131,14 +139,43 @@ input{
 }
 
 .lucky-container{
-    background-color: tomato;
+    margin: 35px;
+}
 
-    margin: 20px;
+.lucky-link{
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+}
+
+.lucky-link:hover{
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.lang-link{
+    color: blue;
+    padding: 0 5px;
 }
 
 
+footer{
+    background-color: rgb(168, 110, 110);
 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 95px;
+    padding: 0 30px;
+}
 
+.carbon{
+    width: 13px;
+    height: 13px;
+}
+
+/*Trying fix the spacing between footer links*/
 
 
 

@@ -13,21 +13,22 @@
 <body>    
 
     <nav>
-        <a class="nav-link" href="#">Gmail</a>
-        <a class="nav-link" href="#">Images</a>
-        <a class="nav-link-round" href="#">
+        <a class="nav-link sf" href="#">Gmail</a>
+        <a class="nav-link sf" href="#">Images</a>
+        <a class="nav-link-round flex" href="#">
             <img class="apps-icon" src="./Assets/apps-icon.png" alt="">
         </a>
-        <!--<button class="nav-link signin-btn">Sign in</button>-->
-        <a class="nav-link-round" target="blank" href="https://github.com/OkiDokiTokiLoki">
+        <button class="nav-link signin-btn lf">Sign in</button>
+        <!--
+        <a class="nav-link-round flex" target="blank" href="https://github.com/OkiDokiTokiLoki">
             <img class="user-profile-img" src="./Assets/user-profile.png" alt="">
-        </a>
+        </a>-->
     </nav>
         
-    <main>
+    <main class="flex">
         <img class="logo" src="./Assets/google-logo.png" alt="">
 
-        <div class="search-container">
+        <div class="search-container flex">
             <img class="search-icon" src="./Assets/search-icon.png" alt="">
             <input type="search">
             <a class="microphone-btn" href="#">
@@ -36,42 +37,41 @@
         </div>
 
         <div class="lucky-container">
-            <a class="lucky-link" href="#">Google Search</a>
-            <a class="lucky-link" href="#">I'm Feeling Lucky</a>
+            <a class="lucky-link lf" href="#">Google Search</a>
+            <a class="lucky-link lf" href="#">I'm Feeling Lucky</a>
         </div>
-<!--
-        <div class="language-container">
-            <p>Google offered in:</p>
-            <a class="lang-link" href="#">Afrikaans</a>
-            <a class="lang-link" href="#">Sesotho</a>
-            <a class="lang-link" href="#">isiZulu</a>
-            <a class="lang-link" href="#">IsiXhosa</a>
-            <a class="lang-link" href="#">Setswana</a>
-            <a class="lang-link" href="#">Northern Sotho</a>
-        </div>-->
+
+        <div class="language-container flex">
+            <p class="sf">Google offered in:</p>
+            <a class="lang-link sf" href="#">Afrikaans</a>
+            <a class="lang-link sf" href="#">Sesotho</a>
+            <a class="lang-link sf" href="#">isiZulu</a>
+            <a class="lang-link sf" href="#">IsiXhosa</a>
+            <a class="lang-link sf" href="#">Setswana</a>
+            <a class="lang-link sf" href="#">Northern Sotho</a>
+        </div>
     </main>
 
     <footer>
-        <div class="top-footer">
-            <p>South Africa</p>
-        </div>
+        
+        <p class="top-footer lf">South Africa</p>
 
-        <div class="bottom-footer">
-            <div class="1">
-                <a class="footer-link" href="#">About</a>
-                <a class="footer-link" href="#">Advertising</a>
-                <a class="footer-link" href="#">Business</a>
-                <a class="footer-link" href="#">How Search works</a>
+        <div class="bottom-footer flex">
+            <div class="one flex">
+                <a class="footer-link lf" href="#">About</a>
+                <a class="footer-link lf" href="#">Advertising</a>
+                <a class="footer-link lf" href="#">Business</a>
+                <a class="footer-link lf" href="#">How Search works</a>
             </div>
 
-            <div class="2">
-                <a class="footer-link" href="#"><img src="./Assets/carbon-icon.png" alt=""> Carbon neutral since 2007</a>
+            <div class="two">
+                <a class="footer-link lf" href="#"><img class="carbon" src="./Assets/carbon-icon.png" alt=""> Carbon neutral since 2007</a>
             </div>
 
-            <div class="3">
-                <a class="footer-link" href="#">Privacy</a>
-                <a class="footer-link" href="#">Terms</a>
-                <a class="footer-link" href="#">Settings</a>
+            <div class="three flex">
+                <a class="footer-link lf" href="#">Privacy</a>
+                <a class="footer-link lf" href="#">Terms</a>
+                <a class="footer-link lf" href="#">Settings</a>
             </div>
         </div>
     </footer>
