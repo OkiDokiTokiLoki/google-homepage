@@ -1,4 +1,4 @@
-/* Standard resets*/
+/* Standard resets */
 
 html{
     font-size: 10px;
@@ -36,14 +36,12 @@ a{
     align-items: center;
 }
 
-
 /* Navigation */
 
 nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end !important;
     width: 100%;
+    padding-right: 8px;
 }
 
 .nav-link{
@@ -91,7 +89,7 @@ nav{
     background-color: #3481e6;
 }
 
-/* Main*/
+/* Main */
 
 main{
     flex-direction: column;
@@ -102,7 +100,7 @@ main{
 .logo {
     width: 272px;
     height: 92px;
-    margin-top: 96px;
+    margin-top: 114px;
 }
 
 .search-container{
@@ -112,6 +110,11 @@ main{
     height: 45px;
     border-radius: 30px;
     margin-top: 26px;
+}
+
+.search-container:hover{
+    border-color: #fff;
+    box-shadow: 0 1px 6px 0 rgb(161, 161, 161);
 }
 
 .search-icon {
@@ -128,8 +131,6 @@ input{
 }
 
 .microphone-btn img{
-    width: 14px;
-    height: 20px;
     margin: 0 21px 0 5px;
 }
 
@@ -152,4 +153,33 @@ input{
 .lang-link{
     color: blue;
     padding: 0 5px;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(230, 228, 222);
+    justify-content: space-between !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+}
+
+.footer-link{
+    padding: 0 15px;
+    color: rgb(126, 126, 126);
+}
+
+/* Media Queries */
+
+@media (max-width: 660px) {
+    .search-container {
+      width: 75%;
+    }
+  
+    footer {
+        flex-direction: column;
+    }
 }
