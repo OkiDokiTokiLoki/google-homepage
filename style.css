@@ -1,8 +1,4 @@
-/* Standard resets */
-
-html{
-    font-size: 10px;
-}
+/* Resets */
 
 *,
 *::before,
@@ -13,8 +9,12 @@ html{
     color: rgba(0,0,0,0.87);
 }
 
+html{
+    font-size: 10px;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
@@ -175,6 +175,7 @@ footer{
 /* Media Queries */
 
 @media (max-width: 660px) {
+   
     .search-container {
       width: 75%;
     }
